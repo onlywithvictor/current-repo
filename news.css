@@ -1,0 +1,248 @@
+:root {
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    padding-top: 4em;
+    padding-left: 7em;
+    padding-right: 8em;
+    padding-bottom: 7em;
+    background-color: rgb(245, 231, 207);
+}
+p {
+    font-size: 15px;
+}
+/* Nav bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    /* position: sticky;
+    top: 0;
+    z-index: 100; */
+}
+.navbar img {
+    height: 33px;
+    width: 55px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li {
+    padding-left: 2rem;
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-size: 12px;
+    font-weight: 600;
+}
+/* main */
+.main {
+    display: flex;
+    /* width: 1110px; */
+    height: 410px;
+    width: 100%;
+    gap: 25px;
+}
+/* bright */
+.bright {
+    width: 75%;
+}
+.bright img {
+    height: 260px;
+    width: 100%;
+}
+#mobile {
+    display: none;
+}
+.bright-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 150px;
+}
+.bright-content h1 {
+    flex-basis: 50%;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--very-dark-blue);
+}
+.bright-content-1 {
+    flex-basis: 50%;
+}
+.bright-content-1 button {
+    padding: 5px;
+    background-color: var(--soft-red);
+    color: var(--off-white);
+    letter-spacing: 1px;
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+    border: none;
+}
+.bright-content p {
+    font-size: 11px;
+    line-height: 1.2rem;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* new */
+.new {
+    width: 25%;
+    background-color: var(--very-dark-blue);
+    color: var(--off-white);
+    padding: 1.5rem;
+    height: 100%;
+}
+.new h2 {
+    color: var(--soft-orange);
+    font-size: 1.7rem;
+}
+.new-content {
+    margin-top: 1rem;
+}
+.new h4 {
+    font-size: .7rem;
+}
+.new p {
+    font-size: 9px;
+    margin-top: .5rem;
+    line-height: 1.2rem;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+}   
+.hydro-ai {
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+    margin-bottom: 1.3rem;
+}
+
+/* Last container */
+.last-container {
+    display: flex;
+    margin-top: 3.5rem;
+    width: 100%;
+    gap: 0px;
+}
+.last-container img {
+    height: 110px;
+    width: 90px;
+    float: left;
+    margin-right: 10px;
+}
+.retro p {
+    margin-top: 1.4rem;
+}
+.last-content {
+    flex-basis: 33%;
+    padding-right: 40px;
+    height: 100px;
+}
+.last-content h3 {
+    color: var(--grayish-blue);
+    font-size:1.5rem;
+    margin-bottom: .8rem;
+}
+.last-content h5 {
+    color: var(--very-dark-blue);
+    font-size: .8rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+.last-content p {
+    font-size: .6em;
+    line-height: 1rem;
+}
+
+/* @media (max-width: 375px) {
+
+} */
+
+
+@media  (max-width: 770px) {
+    body {
+        padding-bottom: 2rem;
+        background-color: black;
+    }
+    .container {
+        height: 1400px;
+        
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .bright img {
+        display: none;
+        height: 300px;
+        opacity: 2;
+        width: 66vw;
+        overflow: scroll;
+    }
+    #mobile {
+        display: unset;
+    }
+    .bright-content {
+        display: block;
+    }
+    .bright-content h1 {
+        padding-right: 10rem;
+    }
+    .bright-content p {
+        
+    }
+    .bright-content-1 button {
+        width: 180px;
+        height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    /* New */
+    .new {
+        width: 100%;
+    }
+    
+    /* Last container */
+    .last-container {
+        display: block;
+        position: relative;
+        top: 530px;
+    }
+    .last-content {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
